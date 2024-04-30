@@ -1,0 +1,214 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image:url(../img/background_img.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    font-family: sans-serif;
+}
+main{
+    width: 100%;
+    max-width: 900px;
+    padding: 20px;
+    margin: auto;
+    margin-top: 100px;
+
+}
+#contenedorAll{
+    margin: auto;
+    position: relative;
+}
+.backBox{
+    width: 100%;
+    height: 200px;
+    background-color: #306abc;
+    border-radius: 15px;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    backdrop-filter: blur(10px);
+    align-items: center;
+}
+.backBox div{
+    width: 100%;
+    margin: 100px 40px;
+    transition: all 500ms;
+}
+.backBox h3{
+    font-weight: 400;
+    font-size: 26px;
+    color: white;
+}
+.backBox p{
+    color: #fff;
+    margin: 20px 10px;
+}
+.bbutton{
+    margin-top: 30px;
+    padding: 10px 40px;
+    border: 2px solid white;
+    background: transparent;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    color: white;
+    outline: none;
+    transition: all 300ms;
+}
+.backBox button:hover{
+    background-color: white;
+    color: #306abc;
+}
+#contenedor_formularios{
+    width: 100%;
+    min-width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 380px;
+    position: absolute;
+    left: -20px;
+    top: -115px;
+    transition: all 500ms;
+}
+
+.backBox #loginForm{
+    width: 100%;
+    padding: 60px 20px;
+    background-color: #fff;
+    position: relative;
+    border-radius: 20px;
+    top: -90px;
+    left: 20px;
+    opacity: 1;
+    display: block;
+
+}
+.backBox #registerForm{
+    width: 100%;
+    padding: 60px 20px;
+    background-color: #fff;
+    position: relative;
+    border-radius: 20px;
+    top: -90px;
+    display: none;
+
+}
+form h2{
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: rgb(48, 106, 188);
+}
+form input{
+    width: 100%;
+    margin-top: 20px;
+    padding: 10px;
+    border: none;
+    background-color: #f2f2f2;
+    font-size: 16px;
+    outline: none;
+    border-radius: 5px;
+}
+#contenedor_formularios button{
+    padding: 10px 40px;
+    margin: 40px;
+    border: none;
+    font-size: 14px;
+    background-color: #46A2fD;
+    color: white;
+    cursor: pointer;
+    outline: none;
+    border-radius: 25px;
+    transition: left 500ms cubic-bezier(0.175, 0.885, 0.320, 1.275);
+}
+#registradoBtn{
+    padding: 10px 40px;
+    margin: 40px;
+    border: none;
+    font-size: 14px;
+    background-color: #46A2fD;
+    color: white;
+    cursor: pointer;
+    outline: none;
+    border-radius: 25px;
+    transition: left 500ms cubic-bezier(0.175, 0.885, 0.320, 1.275);
+}
+
+@keyframes changeImg {
+    0%{
+        background-image: url(../assets/image/background_img.jpg);
+        background-position: center;
+    }
+    60%{
+        background-image: url(../assets/image/background_img1.jpg);
+        background-position: center;
+    }
+    100%{
+        background-image: url(../assets/image/background_img.jpg);
+        background-position: center;
+    }
+}
+@media (max-width:850px) {
+    #contenedorAll{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    main{
+        margin-top: 50px;
+    }
+    .backBox{
+        max-width: 400px;
+        height: 400px;
+        background-color: rgba(0, 99, 197, 0.5);
+        margin:40px 20px ;
+        margin-top: 200px;
+        background-color: transparent;
+        backdrop-filter: blur(0);
+    }
+    #contenedor_formularios{
+        width: 200px;
+        margin: 0;
+        padding: 0;
+    }
+    .user{
+        position: relative;
+        margin-left: 0px;
+        width: 300px;
+        top: 150px;
+        padding: 10px 20px;
+        background-color: rgba(0, 99, 197, 0.5);
+    }
+    #textLogin{
+        position: relative;
+        left: 0px;
+        margin-right: 10px;
+    }
+    #textRegister{
+        position: relative;
+        left: 0px;
+        margin-left: 10px;
+    }
+    .backBox #loginForm{
+        width: 70%;
+        top: -100px;
+        left: -100px;
+        margin: auto;
+        display: block;
+    }
+    .backBox #registerForm{
+        width: 70%;
+        top: -100px;
+        left: 10px;
+        margin: auto;
+        display: none;
+    }
+
+}
