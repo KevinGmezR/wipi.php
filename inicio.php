@@ -98,7 +98,7 @@ if (!empty($_SESSION["ID"])){
         </section>
         <div id="cuadro_de_venta">
             <h2>Nueva Venta</h2>
-            <form id="ventaForm" action="">
+            <form id="ventaForm" action="" method="post">
                 <input class="inputs" type="text" placeholder="cliente" name="clientName">
                 <input class="inputs" list="platos"  placeholder="Elige el producto"  name="producto" id="productSelect">
                 <datalist id="platos">
@@ -142,20 +142,20 @@ if (!empty($_SESSION["ID"])){
                 <div id="infoPayment">
                     <div>
                         <h2>Recibido:</h2>
-                        <p>$<span id="recibidoDiner">0</span> COP</p>
+                        <p>$<span name="recibido" id="recibidoDiner">0</span> COP</p>
                     </div>
                     <div>
                         <h2>Vuelto:</h2>
-                        <p>$<span id="Dar">0</span> COP</p>
+                        <p>$<span name="vuelto" id="Dar">0</span> COP</p>
                     </div>
                     <div>
                         <h2>Total:</h2>
-                        <p>$<span id="dinero">0</span> COP</p>
+                        <p>$<span name="valorTotal" id="dinero">0</span> COP</p>
                     </div>
                 </div>
             <div class="Btns_abajo">
                 <input class="btnGropuPayment" type="button" value="Cerrar" id="cerrarVentana" >
-                <input class="btnGropuPayment" type="button" value="Facturar" id="facturarBtn">
+                <input class="btnGropuPayment" type="button" value="Facturar" name="facturar" id="facturarBtn">
             </div>
         </div>
         <section id="recibo">
